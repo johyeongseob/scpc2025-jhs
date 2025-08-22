@@ -64,11 +64,19 @@ Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
   pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0
   pip install transformers==4.54.1 pandas==2.2.3 pillow==11.0.0 tqdm==4.67.0 numpy==2.0.2
 
-  ## 🧩 Sample Example  
+## 🧩 Sample Example  
 
 ### Input example
 
-ID,img_path,Question,A,B,C,D
-TEST_000,./test_input_images/TEST_000.jpg,"What types of fruits are visible in the image?","Bananas and grapes placed in baskets","Apples and oranges displayed on the counter","Peaches and plums in a wooden crate","Pears and lemons arranged neatly"
+ID: TEST_000
+img:
+
+Question: "What types of fruits are visible in the image?"
+A: "Bananas and grapes placed in baskets"
+B: "Apples and oranges displayed on the counter"
+C: "Peaches and plums in a wooden crate"
+D: "Pears and lemons arranged neatly"
+
+
 
 
