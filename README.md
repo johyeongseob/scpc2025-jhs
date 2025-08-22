@@ -14,7 +14,7 @@
 - **Encoder–Decoder**: T5  
 - **Decoder-only**: LLaMA  
 
-Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터로 변환하고, 동일한 잠재 공간(latent space)에 맵핑하여 유사도를 계산한다. 이를 통해 주어진 질의-응답(task)에 효과적으로 활용할 수 있다:contentReference[oaicite:2]{index=2}.  
+Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터로 변환하고, 동일한 잠재 공간(latent space)에 맵핑하여 유사도를 계산한다. 이를 통해 주어진 질의-응답(task)에 효과적으로 활용할 수 있다.
 
 ---
 
@@ -29,19 +29,19 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 - 이미지–텍스트 임베딩 벡터 간 내적을 통해 유사도 점수 계산  
 - CLIP, SigLIP 각각에 대해 argsort 기반 점수 부여  
   - 1등: 4점, 2등: 3점, 3등: 2점, 4등: 1점  
-- 두 모델의 점수를 합산하여 최종 score_dict 생성:contentReference[oaicite:3]{index=3}  
+- 두 모델의 점수를 합산하여 최종 score_dict 생성
 
 ### 3. Ensemble Decision  
 - 최종 점수 중 argmax를 선택  
-- 다수 후보 발생 시 CLIP 점수가 높은 보기를 최종 답변으로 선택:contentReference[oaicite:4]{index=4}  
+- 다수 후보 발생 시 CLIP 점수가 높은 보기를 최종 답변으로 선택
 
 ---
 
 ## 🧪 Experiments  
-- **Dataset**: 각 샘플은 이미지 1장, 질문 문항, 보기 4개로 구성  
+- **Dataset**: 각 샘플은 이미지 1장, 질문 문항, 보기 4개로 구성  https://dacon.io/competitions/official/236500/data
 - **Evaluation Metric**: Classification Accuracy  
 - **Setting**: Zero-shot (사전 학습된 모델 활용, 추가 파인튜닝 없음)  
-- **Result**: Test set 기준 **약 71% 정확도**:contentReference[oaicite:5]{index=5}  
+- **Result**: Test set 기준 **약 71% 정확도**
 
 ---
 
@@ -51,3 +51,24 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 ---
 
 ## 📂 Repository Structure  
+Radford et al., Learning transferable visual models from natural language supervision, ICML 2021.
+Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
+
+## 🚀 How to Run  
+
+### 1. Requirements  
+- OS: Windows 11  
+- GPU: NVIDIA GeForce RTX 3080 Ti (CUDA 12.4)  
+- Python: 3.11+  
+- Libraries:  
+  pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0
+  pip install transformers==4.54.1 pandas==2.2.3 pillow==11.0.0 tqdm==4.67.0 numpy==2.0.2
+
+  ## 🧩 Sample Example  
+
+### Input example
+
+ID,img_path,Question,A,B,C,D
+TEST_000,./test_input_images/TEST_000.jpg,"What types of fruits are visible in the image?","Bananas and grapes placed in baskets","Apples and oranges displayed on the counter","Peaches and plums in a wooden crate","Pears and lemons arranged neatly"
+
+
