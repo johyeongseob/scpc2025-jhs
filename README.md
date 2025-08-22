@@ -69,8 +69,11 @@ Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
 ### Input example
 
 ID: TEST_000
+
+
 img:
 ![Sample Image](./TEST_000.jpg)
+
 
 Question: "What types of fruits are visible in the image?"
 A: "Bananas and grapes placed in baskets"
