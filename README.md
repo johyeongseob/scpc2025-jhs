@@ -74,7 +74,7 @@ ID: TEST_000
 
 
 img:
-![Sample Image](./TEST_000.jpg)
+<img src="./TEST_000.jpg" alt="Sample Image" width="300"/>
 
 
 Question: "What types of fruits are visible in the image?"
