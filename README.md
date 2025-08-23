@@ -53,8 +53,8 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 ---
 
 ## 📂 Repository Structure  
-Radford et al., Learning transferable visual models from natural language supervision, ICML 2021.
-Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
+1. Radford et al., Learning transferable visual models from natural language supervision, ICML 2021.
+2. Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
 
 ## 🚀 How to Run  
 
