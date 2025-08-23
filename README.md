@@ -73,7 +73,7 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 ID: TEST_000
 
 
-img:
+Img:
 <img src="./TEST_000.jpg" alt="Sample Image" width="300"/>
 
 
