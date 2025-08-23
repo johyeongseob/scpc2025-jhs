@@ -63,8 +63,8 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 - GPU: NVIDIA GeForce RTX 3080 Ti (CUDA 12.4)  
 - Python: 3.11+  
 - Libraries:  
-  pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0
-  pip install transformers==4.54.1 pandas==2.2.3 pillow==11.0.0 tqdm==4.67.0 numpy==2.0.2
+  torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0
+  transformers==4.54.1 pandas==2.2.3 pillow==11.0.0 tqdm==4.67.0 numpy==2.0.2
 
 ## 🧩 Sample Example  
 
