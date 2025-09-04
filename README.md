@@ -22,7 +22,6 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 
 ## ⚙️ Proposed Method  
 
-Image:
 <img src="./ensemble.jpg" alt="ensemble"/>
 
 ### 1. Embedding  
@@ -82,9 +81,13 @@ Image:
 
 
 Question: "What types of fruits are visible in the image?"
+
 A: "Bananas and grapes placed in baskets"
+
 B: "Apples and oranges displayed on the counter"
+
 C: "Peaches and plums in a wooden crate"
+
 D: "Pears and lemons arranged neatly"
 
 
