@@ -23,7 +23,7 @@ Dual Encoder 기반 모델은 이미지와 텍스트를 각각 임베딩 벡터�
 ## ⚙️ Proposed Method  
 
 Image:
-<img src="./ensemble.png" alt="ensemble" width="300"/>
+<img src="./ensemble.jpg" alt="ensemble"/>
 
 ### 1. Embedding  
 - **CLIP**:  
