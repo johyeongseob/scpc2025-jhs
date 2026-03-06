@@ -143,6 +143,8 @@ ID: TEST_000
 
 
 Image:
+
+
 <img src="./TEST_000.jpg" alt="Sample Image" width="300"/>
 
 
