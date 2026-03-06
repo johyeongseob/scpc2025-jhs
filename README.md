@@ -1,6 +1,6 @@
-# 📌 2025 Samsung Collegiate Programming Challenge : AI 챌린지
+# 📌 2025 Samsung Collegiate Programming Challenge: AI Challenge (Dacon)
 
-데이콘 사이트: https://dacon.io/competitions/official/236500/overview/description
+Competition page: https://dacon.io/competitions/official/236500/overview/description
 
 ## 📝 Introduction  
 딥러닝의 발달은 일상생활 전반에 걸쳐 큰 도움을 주고 있다. 특히 이미지와 텍스트와 같은 멀티모달 데이터를 동시에 처리할 수 있는 모델들이 등장하면서, 다양한 응용이 가능해졌다. 본 프로젝트에서는 **이미지와 질문이 주어졌을 때 4개의 보기 중 올바른 답을 선택하는 멀티모달 분류 모델**을 제안한다.  
