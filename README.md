@@ -1,10 +1,10 @@
-# 📌 2025 Samsung Collegiate Programming Challenge: AI Challenge (Dacon)
+# 2025 Samsung Collegiate Programming Challenge: AI Challenge (Dacon)
 
 Competition page: https://dacon.io/competitions/official/236500/overview/description
 
 ---
 
-## 📝 Introduction  
+## 1. Introduction  
 
 Recent advances in deep learning have significantly influenced many real-world applications. In particular, multimodal models capable of processing both images and text have enabled new possibilities for visual question answering and image–text understanding tasks.
 
@@ -16,8 +16,8 @@ The proposed method achieved approximately **71% classification accuracy** on th
 
 ---
 
-## 🔎 Related Work  
-### Multimodal Models
+##  2. Related Work  
+### 2.1. Multimodal Models
 
 Multimodal models are designed to process **two or more modalities simultaneously**.
 
@@ -37,11 +37,11 @@ Dual-encoder models map images and text into a **shared embedding space**, allow
 
 ---
 
-## ⚙️ Proposed Method  
+## 3. Proposed Method  
 
 <img src="./ensemble.jpg" alt="ensemble"/>
 
-### 1. Embedding  
+### 3.1. Embedding  
 
 #### CLIP
 
@@ -52,7 +52,7 @@ Dual-encoder models map images and text into a **shared embedding space**, allow
 
 SigLIP follows the same dual-encoder architecture as CLIP.
 
-### 2. Similarity & Scoring
+### 3.2. Similarity & Scoring
 
 Similarity scores are computed using the **dot product between image and text embeddings**.
 
@@ -68,16 +68,16 @@ For both CLIP and SigLIP:
 The scores from both models are aggregated to construct the final `score_dict`.
 
 
-### 3. Ensemble Decision  
+### 3.3. Ensemble Decision  
 
 - The option with the **highest total score** is selected as the final answer.
 - If multiple candidates share the same score, the option with the **higher CLIP score** is selected.
 
 ---
 
-## 🧪 Experiments
+## 4. Experiments
 
-### Dataset
+### 4.1. Dataset
 
 Each sample consists of:
 
@@ -89,26 +89,26 @@ Dataset link: https://dacon.io/competitions/official/236500/data
 
 ---
 
-### Evaluation Metric
+### 4.2. Evaluation Metric
 
 - **Classification Accuracy**
 
 ---
 
-### Experimental Setting
+### 4.3. Experimental Setting
 
 - **Zero-shot evaluation**
 - Pre-trained models are used **without additional fine-tuning**
 
 ---
 
-### Result
+### 4.4. Result
 
 - Approximately **71% accuracy** on the test set.
 
 ---
 
-## ✅ Conclusion  
+## 5. Conclusion  
 
 This project follows the SCPC competition constraints:
 
@@ -121,11 +121,11 @@ However, the current approach does not fully leverage the **semantic information
 
 ---
 
-## 📂 Repository Structure  
+##  Repository Structure  
 1. Radford et al., Learning transferable visual models from natural language supervision, ICML 2021.
 2. Zhai et al., Sigmoid loss for language image pre-training, ICCV 2023.
 
-## 🚀 How to Run  
+##  How to Run  
 
 ### 1. Requirements  
 - OS: Windows 11  
@@ -135,7 +135,7 @@ However, the current approach does not fully leverage the **semantic information
   torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0
   transformers==4.54.1 pandas==2.2.3 pillow==11.0.0 tqdm==4.67.0 numpy==2.0.2
 
-## 🧩 Sample Example  
+##  Sample Example  
 
 ### Input example
 
